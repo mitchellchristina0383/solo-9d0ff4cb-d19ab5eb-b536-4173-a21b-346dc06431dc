@@ -34,6 +34,9 @@ services:
       PROBE_TIMEOUT: "1.5"
       REQUEST_TIMEOUT: "15"
       DRAIN_DEFAULT_TIMEOUT: "30"
+      NODE_MAX_INFLIGHT: "8"
+      QUEUE_MAX_WAITING: "32"
+      QUEUE_MAX_WAIT: "5"
     ports:
       - "18080:8000"
     depends_on:
